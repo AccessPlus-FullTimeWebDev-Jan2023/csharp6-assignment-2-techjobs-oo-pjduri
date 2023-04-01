@@ -8,11 +8,11 @@ namespace TechJobsOOAutoGraded6
     {
         public void RunProgram()
         {
-            /* TODO: Task 4: Remove this line to uncomment the RunProgram method once you complete the Job class
+            // TODO: Task 4: Remove this line to uncomment the RunProgram method once you complete the Job class
 
-                Job job1 = Sample.job1;
-                Job job2 = Sample.job2;
-                Job job3 = Sample.job3;
+                Job job1 = Samples.job1;
+                Job job2 = Samples.job2;
+                Job job3 = Samples.job3;
 
                 List<Job> jobs = new List<Job>();
                     jobs.Add(job1);
@@ -24,7 +24,7 @@ namespace TechJobsOOAutoGraded6
                     Console.WriteLine(job);
                 }
 
-            TODO: Task 4: Remove this line to uncomment the RunProgram method once you complete the Job class */
+            // TODO: Task 4: Remove this line to uncomment the RunProgram method once you complete the Job class */
 
         }
     }
