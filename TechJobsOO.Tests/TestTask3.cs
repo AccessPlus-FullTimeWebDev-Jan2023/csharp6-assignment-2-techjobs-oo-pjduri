@@ -1,4 +1,6 @@
 ﻿
+using TechJobsOOAutoGraded6;
+
 namespace TechJobsOO.Tests
 {
 	[TestClass]
@@ -80,8 +82,8 @@ namespace TechJobsOO.Tests
         public void Test_JobClass_Has_Accessors()
         {
             //setup
-            Job testJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-            Job testJob2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            Job testJob1 = Sample.testJob3;
+            Job testJob2 = Sample.testJob4;
 
             //verify 
             Assert.AreEqual(testJob1.Name, "Product tester", "Testing Job Name");
@@ -97,8 +99,8 @@ namespace TechJobsOO.Tests
         public void Test_Equals_Method_Setup()
         {
             //setup
-            Job testJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-            Job testJob2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            Job testJob1 = Sample.testJob3;
+            Job testJob2 = Sample.testJob4;
             MethodInfo mInfo = typeof(Job).GetMethod("Equals");
             MethodBody mBody = mInfo.GetMethodBody();
             int lviCount = mBody.LocalVariables.Count;
@@ -119,8 +121,8 @@ namespace TechJobsOO.Tests
         public void Test_GetHashCode_Setup()
         {
             //setup
-            Job testJob1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-            Job testJob2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            Job testJob1 = Sample.testJob3;
+            Job testJob2 = Sample.testJob4;
             MethodInfo mInfo = typeof(Job).GetMethod("GetHashCode");
             MethodBody mBody = mInfo.GetMethodBody();
             int localCount = mBody.LocalVariables.Count;

@@ -1,4 +1,6 @@
 ﻿
+using TechJobsOOAutoGraded6;
+
 namespace TechJobsOO.Tests
 {
 	[TestClass]
@@ -43,7 +45,7 @@ namespace TechJobsOO.Tests
         public void Test_Second_Location_Constructor_Initializes_Value()
         {
             //setup
-            Location testLocation = new Location("Desert");
+            Location testLocation = Sample.testLocation1;
 
             //verify
             Assert.AreEqual("Desert", testLocation.Value, "Is Value set at time of declaration?");
@@ -55,12 +57,14 @@ namespace TechJobsOO.Tests
         public void Test_Second_Location_Constructor_Initializes_Id()
         {
             //setup
-            Location testLocation = new Location("Desert");
-            Console.WriteLine(testLocation.Id);
+            Location testLocation1 = Sample.testLocation1;
+            Location testLocation2 = Sample.testLocation2;
+            Console.WriteLine(testLocation1.Id);
+            Console.WriteLine(testLocation2.Id);
 
             //verify
-            Assert.AreEqual(2, testLocation.Id, "Second constructor not able to update Id");
-            Assert.IsFalse(testLocation.Id == 4, "Second constructor passes value to Id. Is this desirable?");
+            Assert.AreEqual(2, testLocation2.Id, "Second constructor not able to update Id");
+            Assert.IsFalse(testLocation2.Id == 4, "Second constructor passes value to Id. Is this desirable?");
         }
 
 
@@ -70,8 +74,8 @@ namespace TechJobsOO.Tests
         public void Test_CoreCompetency_Accessor_SetUp()
         {
             //setup
-            CoreCompetency testComp = new CoreCompetency("Persistence");
-            CoreCompetency testComp2 = new CoreCompetency("Persistence");
+            CoreCompetency testComp1 = Sample.testComp1;
+            CoreCompetency testComp2 = Sample.testComp2;
 
             Type ccType = typeof(CoreCompetency);
             MemberInfo[] memberInfos = ccType.GetMembers();
@@ -122,8 +126,8 @@ namespace TechJobsOO.Tests
         public void Test_PositionType_Equals_Method_SetUp()
         {
             // set up
-            PositionType testPosition = new PositionType("Quality Control");
-            PositionType testPosition2 = new PositionType("Quality Control");
+            PositionType testPosition1 = Sample.testPosition1;
+            PositionType testPosition2 = Sample.testPosition2;
 
             MethodInfo mInfo = typeof(PositionType).GetMethod("Equals");
             MethodBody mBody = mInfo.GetMethodBody();
@@ -146,8 +150,8 @@ namespace TechJobsOO.Tests
         public void Test_PositionType_HashCode_SetUp()
         {
             // set up
-            PositionType testPosition = new PositionType("Quality Control");
-            PositionType testPosition2 = new PositionType("Quality Control");
+            PositionType testPosition1 = Sample.testPosition1;
+            PositionType testPosition2 = Sample.testPosition2;
 
             MethodInfo mInfo = typeof(PositionType).GetMethod("GetHashCode");
             MethodBody mBody = mInfo.GetMethodBody();
@@ -165,7 +169,7 @@ namespace TechJobsOO.Tests
         public void Test_PositionType_ToString_SetUp()
         {
             //setup
-            PositionType testPosition = new PositionType("Quality Control");
+            PositionType testPosition1 = Sample.testPosition1;
 
             MethodInfo mInfo = typeof(PositionType).GetMethod("ToString");
             MethodBody mBody = mInfo.GetMethodBody();
@@ -178,7 +182,7 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(testPosition.Value.ToString(), "Quality Control", "ToString does not return same output as set value");
         }
 
-        TODO: Task 2: Remove this line to uncomment the tests */
+         TODO: Task 2: Remove this line to uncomment the tests */
 
     }
 }
