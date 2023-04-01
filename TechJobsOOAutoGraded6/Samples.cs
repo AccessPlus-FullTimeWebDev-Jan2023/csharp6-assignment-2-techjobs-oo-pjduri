@@ -8,19 +8,19 @@ namespace TechJobsOOAutoGraded6
 {
     public abstract class Samples
     {
-        //// TODO: Task 2 uncomment the code block below to test task 2
-        ////sample Locations for TestTask2 tests 2 and 3
-        //public static Location testLocation1 = new Location("Desert");
-        //public static Location testLocation2 = new Location("Desert");
+        // TODO: Task 2 uncomment the code block below to test task 2
+        //sample Locations for TestTask2 tests 2 and 3
+        public static Location testLocation1 = new Location("Desert");
+        public static Location testLocation2 = new Location("Desert");
 
-        ////sample Core Competencies for TestTask2 test 4
-        //public static CoreCompetency testComp1 = new CoreCompetency("Persistence");
-        //public static CoreCompetency testComp2 = new CoreCompetency("Persistence");
+        //sample Core Competencies for TestTask2 test 4
+        public static CoreCompetency testComp1 = new CoreCompetency("Persistence");
+        public static CoreCompetency testComp2 = new CoreCompetency("Persistence");
 
-        ////sample Position Types for TestTask2 tests 6 and 7
-        //public static PositionType testPosition1 = new PositionType("Quality Control");
-        //public static PositionType testPosition2 = new PositionType("Quality Control");
-        //// TODO: Task 2 uncomment the code block above to test task 2
+        //sample Position Types for TestTask2 tests 6 and 7
+        public static PositionType testPosition1 = new PositionType("Quality Control");
+        public static PositionType testPosition2 = new PositionType("Quality Control");
+        // TODO: Task 2 uncomment the code block above to test task 2
 
 
         //// TODO: Task 3 uncomment the code block below to test task 3
