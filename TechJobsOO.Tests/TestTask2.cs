@@ -92,9 +92,9 @@ namespace TechJobsOO.Tests
             }
 
             //verify
-            Assert.AreEqual("Persistence", testComp.Value, "CoreComp has no set-able Value");
+            Assert.AreEqual("Persistence", testComp1.Value, "CoreComp has no set-able Value");
             Assert.AreEqual("true", existsCheck, "CoreComp getter does not exist");
-            Assert.AreNotEqual(testComp.Id, testComp2.Id, "Not able to get ids for CoreComp objects");
+            Assert.AreNotEqual(testComp1.Id, testComp2.Id, "Not able to get ids for CoreComp objects");
         }
 
         [TestMethod] //5
@@ -141,8 +141,8 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(lviCount, 2, "Equals method has 2 local variables");
 
             //verify output
-            Assert.AreEqual(testPosition, testPosition, "Objects with Same ID are not Equal");
-            Assert.AreNotEqual(testPosition, testPosition2, "Objects with different ID Equal?");
+            Assert.AreEqual(testPosition1, testPosition1, "Objects with Same ID are not Equal");
+            Assert.AreNotEqual(testPosition1, testPosition2, "Objects with different ID Equal?");
         }
 
 
@@ -161,7 +161,7 @@ namespace TechJobsOO.Tests
             Assert.IsTrue(localCount > 0, "No GetHashCode method setup");
 
             //verify output
-            Assert.AreNotEqual(testPosition.GetHashCode(), testPosition2.GetHashCode(), "GetHashCode output test failed");
+            Assert.AreNotEqual(testPosition1.GetHashCode(), testPosition2.GetHashCode(), "GetHashCode output test failed");
         }
 
 
