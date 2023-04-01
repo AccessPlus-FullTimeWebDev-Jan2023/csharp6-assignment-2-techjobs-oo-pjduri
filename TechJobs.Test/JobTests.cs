@@ -47,6 +47,45 @@ namespace TechJobs.Tests
             Assert.AreNotEqual(job3, job4);
         }
 
+        [TestMethod]
+        public void TestToStringStartsAndEndsWithNewLine()
+        {
+            Assert.IsTrue(job3.ToString().StartsWith($"{Environment.NewLine}"));
+            Assert.IsTrue(job3.ToString().EndsWith($"{Environment.NewLine}"));
+        }
+
+        [TestMethod]
+        public void TestToStringContainsCorrectLabelsAndData()
+        {
+            string testStrJob4 = $"{Environment.NewLine}" +
+                $"ID: {job4.Id}{Environment.NewLine}" +
+                $"Name: Product tester{Environment.NewLine}" +
+                $"Employer: ACME{Environment.NewLine}" +
+                $"Location: Desert{Environment.NewLine}" +
+                $"Position Type: Quality control{Environment.NewLine}" +
+                $"Core Competency: Persistence{Environment.NewLine}";
+            Assert.AreEqual(testStrJob4, job4.ToString());
+        }
+
+        [TestMethod]
+        public void TestToStringHandlesEmptyField()
+        {
+            job3.Name = "";
+            job3.EmployerName.Value = "";
+            job3.EmployerLocation.Value = null;
+            job3.JobType.Value = "";
+            job3.JobCoreCompetency.Value = null;
+
+            string testStrJob3 = $"{Environment.NewLine}" +
+                $"ID: {job3.Id}{Environment.NewLine}" +
+                $"Name: Data not available{Environment.NewLine}" +
+                $"Employer: Data not available{Environment.NewLine}" +
+                $"Location: Data not available{Environment.NewLine}" +
+                $"Position Type: Data not available{Environment.NewLine}" +
+                $"Core Competency: Data not available{Environment.NewLine}";
+            Assert.AreEqual(testStrJob3, job3.ToString());
+        }
+
     }
 }
 
