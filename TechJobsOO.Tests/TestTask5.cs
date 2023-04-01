@@ -42,7 +42,6 @@ namespace TechJobsOO.Tests
         public void Test_TestToString_Starts_And_Ends_With_NewLine()
         {
             //comparing output to a text file.
-            //id numbers may get a little wonky
 
             //setup
             string text = System.IO.File.ReadAllText("C:\Users\pjdur\source\repos\a2-redo\csharp6-assignment-2-techjobs-oo-pjduri\TechJobsOO.Tests\StartsAndEndsWithNewLine.txt").ToString();
@@ -88,7 +87,6 @@ namespace TechJobsOO.Tests
         public void Test_TestToStringContainsCorrectLabelsAndData()
         {
             //comparing output to a text file.
-            //id numbers may get a little wonky
 
             //setup
             var stringWriter = new StringWriter();
@@ -133,7 +131,6 @@ namespace TechJobsOO.Tests
         public void Test_TestToStringHandlesEmptyField()
         {
             //comparing output to a text file.
-            //id numbers may get a little wonky
 
             string text = System.IO.File.ReadAllText("C:\Users\pjdur\source\repos\a2-redo\csharp6-assignment-2-techjobs-oo-pjduri\TechJobsOO.Tests\EmptyFieldTest.txt").ToString();
             var stringWriter = new StringWriter();
