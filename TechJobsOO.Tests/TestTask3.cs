@@ -8,7 +8,7 @@ namespace TechJobsOO.Tests
 	{
         //Testing the new Job class.  Tests are numbered.
 
-        /* TODO: Task 3: Remove this line to uncomment the tests
+        // TODO: Task 3: Remove this line to uncomment the tests
           
      
         [TestMethod]    //1

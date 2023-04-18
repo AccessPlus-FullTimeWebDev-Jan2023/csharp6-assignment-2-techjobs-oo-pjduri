@@ -23,10 +23,10 @@ namespace TechJobsOOAutoGraded6
         // TODO: Task 2 uncomment the code block above to test task 2
 
 
-        //// TODO: Task 3 uncomment the code block below to test task 3
-        //public static Job testJob3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        //public static Job testJob4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        //// TODO: Task 3 uncomment the code block above to test task 3
+        // TODO: Task 3 uncomment the code block below to test task 3
+        public static Job testJob3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        public static Job testJob4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        // TODO: Task 3 uncomment the code block above to test task 3
 
         ////TODO: Task 4 uncomment the code block below to test task 4
         //public static Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
