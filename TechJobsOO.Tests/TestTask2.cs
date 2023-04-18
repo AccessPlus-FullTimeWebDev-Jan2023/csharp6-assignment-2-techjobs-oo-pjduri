@@ -182,7 +182,7 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(testPosition1.Value.ToString(), "Quality Control", "ToString does not return same output as set value");
         }
 
-         TODO: Task 2: Remove this line to uncomment the tests */
+         // TODO: Task 2: Remove this line to uncomment the tests */
 
     }
 }

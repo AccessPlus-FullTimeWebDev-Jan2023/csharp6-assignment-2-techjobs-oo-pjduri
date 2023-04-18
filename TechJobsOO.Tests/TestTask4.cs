@@ -74,7 +74,7 @@ namespace TechJobsOO.Tests
             Assert.AreEqual("true", existsCheck, "'TestJobsForEquality' not found");
         }
 
-    TODO: Task 4: Remove this line to uncomment the tests */
+    // TODO: Task 4: Remove this line to uncomment the tests */
 
     }
 }

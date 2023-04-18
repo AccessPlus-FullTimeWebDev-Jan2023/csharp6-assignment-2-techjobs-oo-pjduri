@@ -142,7 +142,7 @@ namespace TechJobsOO.Tests
             //verify
             Assert.AreEqual(text, output, "Empty string handling error");
         }
-        TODO: Task 5: Remove this line to uncomment the tests*/
+        // TODO: Task 5: Remove this line to uncomment the tests*/
 
     }
 

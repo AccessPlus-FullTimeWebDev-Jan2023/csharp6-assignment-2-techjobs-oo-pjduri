@@ -84,7 +84,7 @@ namespace TechJobsOO.Tests
             Assert.IsTrue(methodLength < 8, "CoreCompetency class methods not properly refactored");
         }
 
-        TODO: Task 6: Remove this line to uncomment the tests */
+        // TODO: Task 6: Remove this line to uncomment the tests */
     }
 }
 
