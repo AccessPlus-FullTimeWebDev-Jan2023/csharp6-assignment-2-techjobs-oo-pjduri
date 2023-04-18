@@ -17,7 +17,7 @@ namespace TechJobs.Tests
             job1 = new Job();
             job2 = new Job();
             job3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-            job4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            job4 = new Job("", new Employer(null), new Location(""), new PositionType (null), new CoreCompetency(""));
         }
 
         [TestMethod]
@@ -41,6 +41,41 @@ namespace TechJobs.Tests
         public void TestJobsForEquality()
         {
             Assert.IsFalse(job3.Equals(job4));
+        }
+
+        [TestMethod]
+        public void TestToStringStartsAndEndsWithNewLine()
+        {
+            Assert.IsTrue(job3.ToString().StartsWith(Environment.NewLine));
+            Assert.IsTrue(job3.ToString().EndsWith(Environment.NewLine));
+        }
+
+        [TestMethod]
+        public void TestToStringContainsCorrectLabelsAndData()
+        {
+            string expected = $"{Environment.NewLine}ID: {job3.Id}" +
+                $"{Environment.NewLine}Name: Product tester" +
+                $"{Environment.NewLine}Employer: ACME" +
+                $"{Environment.NewLine}Location: Desert" +
+                $"{Environment.NewLine}Position Type: Quality control" +
+                $"{Environment.NewLine}Core Competency: Persistence" +
+                $"{Environment.NewLine}";
+
+            Assert.AreEqual(expected, job3.ToString());
+        }
+
+        [TestMethod]
+        public void TestToStringHandlesEmptyField()
+        {
+            string expected = $"{Environment.NewLine}ID: {job4.Id}" +
+                $"{Environment.NewLine}Name: Data not available" +
+                $"{Environment.NewLine}Employer: Data not available" +
+                $"{Environment.NewLine}Location: Data not available" +
+                $"{Environment.NewLine}Position Type: Data not available" +
+                $"{Environment.NewLine}Core Competency: Data not available" +
+                $"{Environment.NewLine}";
+
+            Assert.AreEqual(expected, job4.ToString());
         }
 
     }

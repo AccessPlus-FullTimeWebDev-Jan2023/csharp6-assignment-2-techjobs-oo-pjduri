@@ -8,7 +8,7 @@ namespace TechJobsOO.Tests
         //Uses jobs from the Job class.
         //Tests are numbered.
 
-        /* TODO: Task 5: Remove this line to uncomment the tests
+        // TODO: Task 5: Remove this line to uncomment the tests
 
         //Unit Test 1:  TestToStringStartsAndEndsWithNewLine  -----------------------
 
@@ -44,7 +44,7 @@ namespace TechJobsOO.Tests
             //comparing output to a text file.
 
             //setup
-            string text = System.IO.File.ReadAllText("C:\Users\pjdur\source\repos\a2-redo\csharp6-assignment-2-techjobs-oo-pjduri\TechJobsOO.Tests\StartsAndEndsWithNewLine.txt").ToString();
+            string text = System.IO.File.ReadAllText("C:\\Users\\pjdur\\source\\repos\\a2-redo\\TechJobsOO.Tests\\StartsAndEndsWithNewLine.txt").ToString();
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
             var job = new RunTechJobs();
@@ -132,7 +132,7 @@ namespace TechJobsOO.Tests
         {
             //comparing output to a text file.
 
-            string text = System.IO.File.ReadAllText("C:\Users\pjdur\source\repos\a2-redo\csharp6-assignment-2-techjobs-oo-pjduri\TechJobsOO.Tests\EmptyFieldTest.txt").ToString();
+            string text = System.IO.File.ReadAllText("C:\\Users\\pjdur\\source\\repos\\a2-redo\\TechJobsOO.Tests\\StartsAndEndsWithNewLine.txt").ToString();
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
             var job = new RunTechJobs();
