@@ -14,6 +14,9 @@ namespace TechJobsOOAutoGraded6
         }
 
         // TODO: Task 2: Add a second constructor to this class that uses the Location() constructor and sets the value of the value field.
+        
+        // TODO: 1: IMPORTANT: BE SURE TO UNCOMMENT THE RELATED TASK BLOCKS AND TESTS FOR EACH TASK
+        // use View > Task List to find items that need to be uncommented
 
         public override bool Equals(object obj)
         {
