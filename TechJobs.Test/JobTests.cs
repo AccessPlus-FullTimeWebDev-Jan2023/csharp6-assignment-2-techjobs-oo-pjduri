@@ -73,11 +73,11 @@ namespace TechJobs.Tests
             job4.JobCoreCompetency.Value = "";
 
             string expected = $"{Environment.NewLine}ID: {job4.Id}" +
-                $"{Environment.NewLine}Name: “Data not available”" +
-                $"{Environment.NewLine}Employer: “Data not available”" +
-                $"{Environment.NewLine}Location: “Data not available”" +
-                $"{Environment.NewLine}Position Type: “Data not available”" +
-                $"{Environment.NewLine}Core Competency: “Data not available”" +
+                $"{Environment.NewLine}Name: Data not available" +
+                $"{Environment.NewLine}Employer: Data not available" +
+                $"{Environment.NewLine}Location: Data not available" +
+                $"{Environment.NewLine}Position Type: Data not available" +
+                $"{Environment.NewLine}Core Competency: Data not available" +
                 $"{Environment.NewLine}";
 
             Assert.AreEqual(expected, job4.ToString());
