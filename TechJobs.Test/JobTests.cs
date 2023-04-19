@@ -43,6 +43,14 @@ namespace TechJobs.Tests
             Assert.IsFalse(job3.Equals(job4));
         }
 
+        [TestMethod]
+        public void TestToStringStartsAndEndsWithNewLine()
+        {
+            Assert.IsTrue(job3.ToString().StartsWith(Environment.NewLine));
+        }
+
+
+
     }
 }
 

@@ -38,6 +38,13 @@ namespace TechJobsOOAutoGraded6
             return HashCode.Combine(Id);
         }
 
+        public override string? ToString()
+        {
+            return $"{Environment.NewLine}{Environment.NewLine}";
+        }
+
+
+
         // TODO: Task 5: Generate custom ToString() method.
         //Until you create this method, you will not be able to print a job to the console.
 
