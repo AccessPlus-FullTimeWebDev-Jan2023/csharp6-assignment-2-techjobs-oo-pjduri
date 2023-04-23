@@ -48,7 +48,7 @@ namespace TechJobsOO.Tests
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
             var job = new RunTechJobs();
-            job.RunProgram();
+            job.NewLineTester();
             var output = stringWriter.ToString();
 
             //verify

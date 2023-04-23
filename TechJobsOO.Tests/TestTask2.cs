@@ -45,7 +45,7 @@ namespace TechJobsOO.Tests
         public void Test_Second_Location_Constructor_Initializes_Value()
         {
             //setup
-            Location testLocation = Samples.testLocation1;
+            Location testLocation = RunTechJobs.testLocation1;
 
             //verify
             Assert.AreEqual("Desert", testLocation.Value, "Is Value set at time of declaration?");
@@ -57,8 +57,8 @@ namespace TechJobsOO.Tests
         public void Test_Second_Location_Constructor_Initializes_Id()
         {
             //setup
-            Location testLocation1 = Samples.testLocation1;
-            Location testLocation2 = Samples.testLocation2;
+            Location testLocation1 = RunTechJobs.testLocation1;
+            Location testLocation2 = RunTechJobs.testLocation2;
             Console.WriteLine(testLocation1.Id);
             Console.WriteLine(testLocation2.Id);
 
@@ -74,8 +74,8 @@ namespace TechJobsOO.Tests
         public void Test_CoreCompetency_Accessor_SetUp()
         {
             //setup
-            CoreCompetency testComp1 = Samples.testComp1;
-            CoreCompetency testComp2 = Samples.testComp2;
+            CoreCompetency testComp1 = RunTechJobs.testComp1;
+            CoreCompetency testComp2 = RunTechJobs.testComp2;
 
             Type ccType = typeof(CoreCompetency);
             MemberInfo[] memberInfos = ccType.GetMembers();
@@ -126,8 +126,8 @@ namespace TechJobsOO.Tests
         public void Test_PositionType_Equals_Method_SetUp()
         {
             // set up
-            PositionType testPosition1 = Samples.testPosition1;
-            PositionType testPosition2 = Samples.testPosition2;
+            PositionType testPosition1 = RunTechJobs.testPosition1;
+            PositionType testPosition2 = RunTechJobs.testPosition2;
 
             MethodInfo mInfo = typeof(PositionType).GetMethod("Equals");
             MethodBody mBody = mInfo.GetMethodBody();
@@ -150,8 +150,8 @@ namespace TechJobsOO.Tests
         public void Test_PositionType_HashCode_SetUp()
         {
             // set up
-            PositionType testPosition1 = Samples.testPosition1;
-            PositionType testPosition2 = Samples.testPosition2;
+            PositionType testPosition1 = RunTechJobs.testPosition1;
+            PositionType testPosition2 = RunTechJobs.testPosition2;
 
             MethodInfo mInfo = typeof(PositionType).GetMethod("GetHashCode");
             MethodBody mBody = mInfo.GetMethodBody();
@@ -169,7 +169,7 @@ namespace TechJobsOO.Tests
         public void Test_PositionType_ToString_SetUp()
         {
             //setup
-            PositionType testPosition1 = Samples.testPosition1;
+            PositionType testPosition1 = RunTechJobs.testPosition1;
 
             MethodInfo mInfo = typeof(PositionType).GetMethod("ToString");
             MethodBody mBody = mInfo.GetMethodBody();

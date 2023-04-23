@@ -82,8 +82,8 @@ namespace TechJobsOO.Tests
         public void Test_JobClass_Has_Accessors()
         {
             //setup
-            Job testJob1 = Samples.testJob3;
-            Job testJob2 = Samples.testJob4;
+            Job testJob1 = RunTechJobs.testJob3;
+            Job testJob2 = RunTechJobs.testJob4;
 
             //verify 
             Assert.AreEqual(testJob1.Name, "Product tester", "Testing Job Name");
@@ -99,8 +99,8 @@ namespace TechJobsOO.Tests
         public void Test_Equals_Method_Setup()
         {
             //setup
-            Job testJob1 = Samples.testJob3;
-            Job testJob2 = Samples.testJob4;
+            Job testJob1 = RunTechJobs.testJob3;
+            Job testJob2 = RunTechJobs.testJob4;
             MethodInfo mInfo = typeof(Job).GetMethod("Equals");
             MethodBody mBody = mInfo.GetMethodBody();
             int lviCount = mBody.LocalVariables.Count;
@@ -121,8 +121,8 @@ namespace TechJobsOO.Tests
         public void Test_GetHashCode_Setup()
         {
             //setup
-            Job testJob1 = Samples.testJob3;
-            Job testJob2 = Samples.testJob4;
+            Job testJob1 = RunTechJobs.testJob3;
+            Job testJob2 = RunTechJobs.testJob4;
             MethodInfo mInfo = typeof(Job).GetMethod("GetHashCode");
             MethodBody mBody = mInfo.GetMethodBody();
             int localCount = mBody.LocalVariables.Count;
